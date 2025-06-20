@@ -1,8 +1,8 @@
 import React from 'react'
-
+import style from './contact.module.css'
 const page = () => {
   return (
-    <div>Home</div>
+    <div>Contact</div>
   )
 }
 
