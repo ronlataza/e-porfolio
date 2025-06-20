@@ -1,5 +1,5 @@
 import React from 'react'
-import style from './services.module.css'
+import styles from './services.module.css'
 const page = () => {
   return (
     <div>Services</div>
