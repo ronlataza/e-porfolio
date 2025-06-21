@@ -1,0 +1,10 @@
+.nav{
+    width: 100vw;
+    height: 4rem;
+    background: transparent;
+    backdrop-filter: blur(200px);
+    border-bottom: 1px solid var(--color-gray-200);
+    display:grid;
+    place-items: center;
+    position: fixed;
+}
