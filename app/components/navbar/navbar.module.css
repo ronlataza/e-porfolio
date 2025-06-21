@@ -38,4 +38,11 @@
 }
 .navBtns buttons{
     cursor: pointer;
+    font-size: 1.3rem;
+    color: var(--color-gray-900);
+    background: transparent;
+}
+.navBtn{
+    display: none;
+
 }
