@@ -7,4 +7,13 @@
     display:grid;
     place-items: center;
     position: fixed;
+    top:0;
+    left:0;
+    z-index: 10;
+}
+.navContainer{
+    display: flex;
+    place-items: center;
+    justify-content: space-between;
+    position: relative;
 }
