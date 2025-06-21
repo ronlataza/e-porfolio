@@ -28,3 +28,11 @@
     gap: 3.5rem;
 
 }
+.navItems a.active{
+    color: var(--color-primary);
+}
+.navBtns {
+    display: flex;
+    align-items: center;
+    gap:2.5rem;
+}
