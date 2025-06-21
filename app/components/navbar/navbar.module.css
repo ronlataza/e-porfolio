@@ -22,3 +22,9 @@
     font-weight: 900;
     color:var(--color-primary)
 }
+.navItems{
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+
+}
