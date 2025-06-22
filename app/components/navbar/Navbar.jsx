@@ -1,5 +1,5 @@
 "use client"
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './navbar.module.css'
 import Link from 'next/link'
 import { FaBars } from "react-icons/fa6"
@@ -19,6 +19,7 @@ const data = [
 
 
 const navbar = () => {
+  const [open,setOpen]=useState(false);
   return (
     <nav className={styles.nav}>
       <div className={`container ${styles.navContainer}`}>
