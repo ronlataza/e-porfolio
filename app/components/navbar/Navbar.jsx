@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import styles from './navbar.module.css'
 import Link from 'next/link'
 import { FaBars } from "react-icons/fa6"
-import { AiOutlineCost } from "react-icons/ai"
+import { AiOutlineClose, AiOutlineCost } from "react-icons/ai"
 import { GoMoon, GoSun } from "react-icons/go"
 import { usePathname } from 'next/navigation'
 
@@ -19,22 +19,22 @@ const data = [
 
 
 const navbar = () => {
-  const [open,setOpen]=useState(false);
+  const [navOpen,setnavOpen]=useState(false);
   return (
     <nav className={styles.nav}>
       <div className={`container ${styles.navContainer}`}>
         <Link href="/" className={styles.navLogo}>Profile</Link>
-        <ul className={styles.navItems}>
+        {navOpen && <ul className={styles.navItems}>
           {
             data.map(({id, link, caption})=> <li key={id}>
               <Link href ={link}>{caption}</Link>
             </li>)
           }
 
-        </ul>
+        </ul>}
         <div className={styles.navBtns}>
           <button className={styles.themeBtn}> <GoMoon></GoMoon></button>
-          <button className={styles.navBtn}><FaBars></FaBars></button>
+          <button className={styles.navBtn}onClick={()=> setnavOpen(!navOpen)}>{navOpen ?<AiOutlineClose></AiOutlineClose>:<FaBars></FaBars>}</button>
 
          
 
