@@ -21,14 +21,21 @@ const data = [
 const navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
 
+  const closeNavHandler = () => {
+    if(window.innerWidth <= 600){
+      setNavOpen(false);
+
+    }
+  }
+
   return (
     <nav className={styles.nav}>
       <div className={`container ${styles.navContainer}`}>
-        <Link href="/" className={styles.navLogo}>Profile</Link>
+        <Link href="/" className={styles.navLogo} onClick={closeNavHandler}>Profile</Link>
         {navOpen && <ul className={styles.navItems}>
           {
             data.map(({id, link, caption})=> <li key={id}>
-              <Link href ={link}>{caption}</Link>
+              <Link href ={link} onClick={closeNavHandler}>{caption}</Link>
             </li>)
           }
 
