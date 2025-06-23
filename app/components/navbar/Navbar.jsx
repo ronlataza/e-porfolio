@@ -20,6 +20,7 @@ const data = [
 
 const navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
+  const pathname = usePathname();
 
   const closeNavHandler = () => {
     if(window.innerWidth <= 600){
