@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './navbar.module.css'
 import Link from 'next/link'
 import { FaBars } from "react-icons/fa6"
@@ -21,6 +21,12 @@ const data = [
 const navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
   const pathname = usePathname();
+
+  useEffect(() => {
+    if(window.innerWidth > 600){
+      setNavOpen(true);
+    }
+  })
 
   const closeNavHandler = () => {
     if(window.innerWidth <= 600){
