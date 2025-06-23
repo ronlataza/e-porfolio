@@ -12,7 +12,7 @@ const Header = () => {
             </p>
             <div className={styles.headerCta}>
                 <Link href = "/portfolio" className='btn'>Projects</Link>
-                <Link href = "/portfolio" className='btn'>Projects</Link>
+                <Link href = "/contact" className='btn primary'>Hire Me</Link>
             </div>
         </div>
         <div className={styles.headerRight}></div>
