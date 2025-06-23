@@ -36,7 +36,7 @@ const navbar = () => {
         {navOpen && <ul className={styles.navItems}>
           {
             data.map(({id, link, caption})=> <li key={id}>
-              <Link href ={link} onClick={closeNavHandler}>{caption}</Link>
+              <Link href ={link} onClick={closeNavHandler} className={ pathname === link ? "active" : "" }>{caption}</Link>
             </li>)
           }
 
