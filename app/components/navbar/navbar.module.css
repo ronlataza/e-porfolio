@@ -70,4 +70,11 @@
     .navBtn{
         display: inline-block;
     }
+
+
+    @keyframes identifier{
+        to{
+            transform: rotateX(0);
+        }
+    }
 }
