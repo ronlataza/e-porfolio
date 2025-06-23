@@ -26,7 +26,7 @@ const navbar = () => {
     if(window.innerWidth > 600){
       setNavOpen(true);
     }
-  })
+  }, [navOpen])
 
   const closeNavHandler = () => {
     if(window.innerWidth <= 600){
