@@ -75,6 +75,7 @@
     @keyframes identifier{
         to{
             transform: rotateX(0);
+            opacity: 1;
         }
     }
 }
