@@ -60,6 +60,7 @@
         width: 100%;
         animation: identifier 200ms ease forwards;
         transform: rotateX(90deg);
+        opacity: 0;
         
     }
     .navItems a{
