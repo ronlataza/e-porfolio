@@ -4,7 +4,12 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <div>Header</div>
+    <header className={`container ${styles.header}`}>
+        <div>
+            
+        </div>
+
+    </header>
   )
 }
 
