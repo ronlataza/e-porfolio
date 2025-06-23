@@ -59,6 +59,8 @@
         box-shadow: -2rem 4rem 3rem rgba(0,0,0,0.2);
         width: 100%;
         animation: identifier 200ms ease forwards;
+        transform: rotateX(90deg);
+        
     }
     .navItems a{
         padding: 1.3rem 4.5rem;
