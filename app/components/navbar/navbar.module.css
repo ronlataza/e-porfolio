@@ -54,6 +54,7 @@
         position: absolute;
         top : 3rem;
         right: 0;
+        perspective: 130px;
     }
     .navItems li{
         box-shadow: -2rem 4rem 3rem rgba(0,0,0,0.2);
