@@ -126,6 +126,7 @@ h6 {
 .btn.primary {
   background: var(--color-primary);
   color: white;
+  border-radius: 1rem;
 }
 
 .btn.primary:hover {

@@ -54,3 +54,15 @@
     filter: saturate(1) opacity(1) blur(0); /* Back to normal */
   }
 }
+@media screen and (max-width: 600px){
+    .header{
+        min-height: fit-content;
+        gap: 2.5rem;
+        grid-template-columns: 1fr;
+        padding: 7rem 0;
+
+    }
+    .headerLeft p{
+        margin-bottom: 1.8rem;
+    }
+}
