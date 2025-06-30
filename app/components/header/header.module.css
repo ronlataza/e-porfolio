@@ -19,3 +19,19 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+.photos1{
+    border-radius: 0 5rem;
+    overflow:hidden
+}
+.photos2{
+    border-radius: 5rem 0; 
+    overflow:hidden
+}
+.photos3{
+    border-radius: 5rem 0; 
+    overflow:hidden
+}
+.photos4{
+    border-radius: 0 5rem ; 
+    overflow:hidden
+}
