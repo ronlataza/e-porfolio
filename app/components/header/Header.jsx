@@ -2,6 +2,12 @@
 import styles from './header.module.css'
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
+import Image1 from '../../assets/top-left.png'
+import Image2 from '../../assets/top-right.png'
+import Image3 from '../../assets/bottom-left.png'
+import Image4 from '../../assets/bottom-right.png'
+
 const Header = () => {
   return (
     <header className={`container ${styles.header}`}>
@@ -15,7 +21,20 @@ const Header = () => {
                 <Link href = "/contact" className='btn primary'>Hire Me</Link>
             </div>
         </div>
-        <div className={styles.headerRight}></div>
+        <div className={styles.headerRight}>
+          <article classname ={styles.card1}>
+            <Image src ={Image1} alt=''></Image>
+          </article>
+           <article classname ={styles.card1}>
+            <Image src ={Image2} alt=''></Image>
+          </article>
+           <article classname ={styles.card1}>
+            <Image src ={Image3} alt=''></Image>
+          </article>
+           <article classname ={styles.card1}>
+            <Image src ={Image4} alt=''></Image>
+          </article>
+        </div>
 
     </header>
   )
