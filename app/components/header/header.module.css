@@ -5,3 +5,17 @@
     gap : 7rem;
     align-items: center;
 }
+.headerLeft p{
+    margin: 0.8rem 0 2.5rem;
+    font-size: 1.1rem;
+
+}
+.headerCta{
+    display : flex;
+    gap: 1.2rem;
+
+}
+.headerRight{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
