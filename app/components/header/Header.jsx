@@ -12,9 +12,10 @@ const Header = () => {
   return (
     <header className={`container ${styles.header}`}>
         <div className={styles.headerLeft}>
-            <h1>Get your Business online right away</h1>
+            <h1>Ron Ryan Lataza</h1>
+            <h3>Aspiring Developer</h3>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur atque itaque et quia.
+                Learning the craft of web development with a mindset focused on growth, creativity, and improvement.
             </p>
             <div className={styles.headerCta}>
                 <Link href = "/portfolio" className='btn'>Projects</Link>

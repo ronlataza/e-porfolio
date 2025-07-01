@@ -1,0 +1,61 @@
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.shapeCircle,
+.shapeTriangle,
+.shapeSquare {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #e50914;
+  animation: rotate 1.2s linear infinite;
+}
+
+.shapeCircle {
+  border-radius: 50%;
+}
+
+
+
+.shapeTriangle {
+  width: 0;
+  height: 0;
+  border: none;
+  background: none;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 35px solid #e50914;
+  animation: bounce 1.2s infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0.7;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateY(-15px);
+    opacity: 1;
+  }
+}

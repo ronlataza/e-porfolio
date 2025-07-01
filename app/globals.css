@@ -76,10 +76,15 @@ img {
   object-fit: cover;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h4, h5, h6 {
   color: var(--color-gray-900);
   line-height: 1;
   font-weight: 900;
+}
+h3{
+  color: var(--color-gray-900);
+  line-height: 2;
+  font-weight: 500;
 }
 
 h1 {
