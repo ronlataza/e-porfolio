@@ -13,19 +13,19 @@ const Services = () => {
     <section className={styles.services}>
       <div className={`container ${styles.servicesWrapper}`}>
         <Link href ="/services" className={ `btn ${styles.service}`}>
-        <span className='styles.icons'><MdDesignServices></MdDesignServices></span>
+        <span className={styles.icon}><MdDesignServices></MdDesignServices></span>
         <h6 className= {styles.title}>Ui/Ux Design</h6>
         </Link>
         <Link href ="/services" className={ `btn ${styles.service}`}>
-        <span className='styles.icons'><FaCode></FaCode></span>
+        <span className={styles.icon}><FaCode></FaCode></span>
         <h6 className= {styles.title}>Front End</h6>
         </Link>
         <Link href ="/services" className={ `btn ${styles.service}`}>
-        <span className='styles.icons'><FaServer></FaServer></span>
+        <span className={styles.icon}><FaServer></FaServer></span>
         <h6 className= {styles.title}>BackEnd</h6>
         </Link>
         <Link href ="/services" className={ `btn ${styles.service}`}>
-        <span className='styles.icons'><FaLaptopCode></FaLaptopCode></span>
+        <span className={styles.icon}><FaLaptopCode></FaLaptopCode></span>
         <h6 className= {styles.title}>FullStack</h6>
         </Link>
         
