@@ -10,7 +10,13 @@ import styles from './services.module.css'
 
 const Services = () => {
   return (
-    <div>Services</div>
+    <section className={styles.services}>
+      <div className={`container ${styles.servicesWrapper}`}>
+        <Link href ="/services" className={ `btn ${styles.service}`}></Link>
+
+      </div>
+
+    </section>
   )
 }
 
