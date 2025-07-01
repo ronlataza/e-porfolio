@@ -12,9 +12,26 @@ const Services = () => {
   return (
     <section className={styles.services}>
       <div className={`container ${styles.servicesWrapper}`}>
-        <Link href ="/services" className={ `btn ${styles.service}`}></Link>
+        <Link href ="/services" className={ `btn ${styles.service}`}>
+        <span className='styles.icons'><MdDesignServices></MdDesignServices></span>
+        <h6 className= {styles.title}>Ui/Ux Design</h6>
+        </Link>
+        <Link href ="/services" className={ `btn ${styles.service}`}>
+        <span className='styles.icons'><FaCode></FaCode></span>
+        <h6 className= {styles.title}>Front End</h6>
+        </Link>
+        <Link href ="/services" className={ `btn ${styles.service}`}>
+        <span className='styles.icons'><FaServer></FaServer></span>
+        <h6 className= {styles.title}>BackEnd</h6>
+        </Link>
+        <Link href ="/services" className={ `btn ${styles.service}`}>
+        <span className='styles.icons'><FaLaptopCode></FaLaptopCode></span>
+        <h6 className= {styles.title}>FullStack</h6>
+        </Link>
+        
 
       </div>
+      
 
     </section>
   )
