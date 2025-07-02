@@ -7,7 +7,7 @@ import Image from 'next/image'
 const page = () => {
   return (
     <section>
-    <SectionHeader title="About Me" subtitle="Who am i what i do"> </SectionHeader>
+    <SectionHeader title="About Me" > </SectionHeader>
     <div className={`container ${styles.container}`}>
       <article className={styles.image}>
         <Image src ={ AboutImage} alt="My Image"></Image>
@@ -20,9 +20,15 @@ const page = () => {
            detail-oriented mindset, I thrive on solving problems and exploring new tools and trends.
             I'm eager to contribute to meaningful projects, collaborate with forward-thinking teams, 
             and continue developing my skills to make a lasting impact in the digital world</p>
-            <a href="/cv.pdf" download="RonRyan-CV.pdf" className="btn" rel="noopener noreferrer">
+           <a
+  href="/cv.pdf"
+  className={`btn primary ${styles.aboutCta}`}
+  download
+  rel="noopener noreferrer"
+>
   Download CV
 </a>
+
 
 
       </article>
