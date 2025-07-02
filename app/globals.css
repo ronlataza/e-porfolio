@@ -1,3 +1,5 @@
+
+
 * {
   list-style: none;
   border: 0;
@@ -253,3 +255,6 @@ main.dark .swiper-pagination-bullet.swiper-pagination-bullet-active {
 html {
   scroll-behavior: smooth;
 }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
