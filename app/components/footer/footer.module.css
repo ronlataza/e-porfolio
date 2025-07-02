@@ -2,14 +2,14 @@
     background: var(--color-gray-0);
     backdrop-filter: blur (10px);
     border-top: 1px solid var(--color-gray-200);
-    margin-top: 7rem;
+    margin-top: 5rem;
     position: relative;
 }
 .footerContainer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 6rem 3rem;
+    padding: 2rem 3rem;
 }
 .footerLogo{
     font-size: 1.2rem;

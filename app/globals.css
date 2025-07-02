@@ -250,3 +250,6 @@ main.dark .swiper-pagination-bullet.swiper-pagination-bullet-active {
     margin-bottom: 1.5rem;
   }
 }
+html {
+  scroll-behavior: smooth;
+}

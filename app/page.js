@@ -8,8 +8,18 @@ const Page = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 2000); // 2 seconds
-    return () => clearTimeout(timer);
+    const hasLoadedBefore = sessionStorage.getItem('hasLoaded');
+
+    if (hasLoadedBefore) {
+      setLoading(false);
+    } else {
+      const timer = setTimeout(() => {
+        setLoading(false);
+        sessionStorage.setItem('hasLoaded', 'true');
+      }, 2000);
+
+      return () => clearTimeout(timer);
+    }
   }, []);
 
   return (
