@@ -11,7 +11,7 @@ import { usePathname } from 'next/navigation'
 const data = [
   {id: 1, link: '/',caption: 'Home'},
   {id: 2, link: '/about',caption: 'About'},
-  {id: 3, link: '/services',caption: 'Services'},
+  {id: 3, link: '/career',caption: 'Career'},
   {id: 4, link: '/portfolio',caption: 'Portfolio'},
   {id: 5, link: '/contact',caption: 'Contact'}
 ]
