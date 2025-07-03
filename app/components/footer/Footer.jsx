@@ -9,8 +9,7 @@ const data = [
   {id: 1, link: '/', caption: 'Home'},
   {id: 2, link: '/about', caption: 'About'},
   {id: 3, link: '/career', caption: 'Career'},
-  {id: 4, link: '/portfolio', caption: 'Portfolio'},
-  {id: 5, link: '/contact', caption: 'Contact'},
+  {id: 4, link: '/contact', caption: 'Contact'},
 ]
 
 

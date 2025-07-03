@@ -18,7 +18,7 @@ const Header = () => {
                 Learning the craft of web development with a mindset focused on growth, creativity, and improvement.
             </p>
             <div className={styles.headerCta}>
-                <Link href = "/portfolio" className='btn'>Projects</Link>
+                <Link href = "/about" className='btn'>About Me</Link>
                 <Link href = "/contact" className='btn primary'>Hire Me</Link>
             </div>
         </div>

@@ -1,19 +1,18 @@
 "use client"
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import styles from './navbar.module.css'
 import Link from 'next/link'
 import { FaBars } from "react-icons/fa6"
 import { AiOutlineClose} from "react-icons/ai"
 import { GoMoon, GoSun } from "react-icons/go"
 import { usePathname } from 'next/navigation'
-
+import { ThemeContext } from '@/app/context/themeContext'
 
 const data = [
   {id: 1, link: '/',caption: 'Home'},
   {id: 2, link: '/about',caption: 'About'},
   {id: 3, link: '/career',caption: 'Career'},
-  {id: 4, link: '/portfolio',caption: 'Portfolio'},
-  {id: 5, link: '/contact',caption: 'Contact'}
+  {id: 4, link: '/contact',caption: 'Contact'}
 ]
 
 
@@ -21,6 +20,7 @@ const data = [
 const navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
   const pathname = usePathname();
+  const { theme,setTheme} = useContext(ThemeContext)
 
   useEffect(() => {
     if(window.innerWidth > 600){
@@ -32,6 +32,14 @@ const navbar = () => {
     if(window.innerWidth <= 600){
       setNavOpen(false);
 
+    }
+  }
+
+  const changeThemeHandler = () => {
+    if (theme === 'light'){
+      setTheme('dark')
+    }else {
+      setTheme('light')
     }
   }
 
@@ -48,7 +56,7 @@ const navbar = () => {
 
         </ul>}
         <div className={styles.navBtns}>
-          <button className={styles.themeBtn}> <GoMoon></GoMoon></button>
+          <button className={styles.themeBtn} onClick={changeThemeHandler}>{theme === 'light' ? <GoMoon /> : <GoSun/>}</button>
           <button className={styles.navBtn} onClick={() => setNavOpen(!navOpen)}>{navOpen ? <AiOutlineClose></AiOutlineClose>:<FaBars></FaBars>}</button>
 
          

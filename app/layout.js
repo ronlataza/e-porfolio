@@ -1,7 +1,8 @@
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
-
+import Main from "./Main";
 import Navbar from "./components/navbar/Navbar";
+import { ThemeProvider } from "./context/themeContext";
 
 const inter = Inter({ subsets: ["latin"] });
 const geistSans = Geist({
@@ -22,11 +23,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${inter.className} ${geistSans.variable} ${geistMono.variable}`}>
-        <main>
+        <ThemeProvider>
+        <Main>
           <Navbar />
           {children}
 
-        </main>
+        </Main>
+        </ThemeProvider>
       </body>
     </html>
   );
