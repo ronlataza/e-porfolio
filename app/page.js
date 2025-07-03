@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Header from './components/header/Header';
 import Services from './components/services/Services';
 import Preloader from './components/preloader/Preload.jsx';
+import Footer from './components/footer/Footer';
 
 const Page = () => {
   const [loading, setLoading] = useState(true);
@@ -30,6 +31,7 @@ const Page = () => {
         <>
           <Header />
           <Services />
+          <Footer></Footer>
         </>
       )}
     </>

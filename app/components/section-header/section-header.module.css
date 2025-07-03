@@ -1,9 +1,9 @@
 .sectionHeader{
-    margin: 2rem 0 4rem;
+    margin: 2rem 0 1rem;
     padding: 3rem 0;
     text-align: center;
     background: var(--color-gray-0);
-    margin-top: 20px;
+    margin-top: 50px;
 }
 .sectionHeader h3{
     color: var(--color-primary);

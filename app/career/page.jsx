@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './services.module.css'
 import SectionHeader from '../components/section-header/SectionHeader'
+import Footer from '../components/footer/Footer';
 
 const ServiceItem = ({ title, company, date, description }) => (
   <div className={styles.serviceItem}>
@@ -29,6 +30,7 @@ const CertificationCard = ({ title, date, description }) => (
 
 const page = () => {
   return (
+    <>
     <section>
       <SectionHeader title="Qualifications" subtitle="My Professional Experience/s and Certifications"></SectionHeader>
 
@@ -66,7 +68,8 @@ const page = () => {
 
 
     </section>
-    
+    <Footer></Footer>
+    </>
 
   )
 }

@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns:  40% 50%;
     gap: 10%;
+    align-items: center;
 }
 .image{
     height: 35rem;
