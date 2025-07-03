@@ -22,38 +22,25 @@
 .photos1{
     border-radius: 1rem 0 0 0;
     overflow:hidden;
-    animation: identifier 8s ease-in-out infinite alternate;
+
 }
 .photos2{
     border-radius: 0 1rem 0 0; 
     overflow:hidden;
-    animation: identifier 15s ease-in-out infinite alternate;
+
 
 }
 .photos3{
     border-radius: 0 0 0 1rem; 
     overflow:hidden;
-     animation: identifier 20s ease-in-out infinite  alternate;
+
 }
 .photos4{
     border-radius: 0 0 1rem 0 ; 
     overflow:hidden;
-     animation: identifier 12s ease-in-out infinite alternate;
+
 }
-@keyframes identifier {
-  0% {
-    filter: saturate(1) opacity(1) blur(0);
-  }
-  50% {
-    filter: saturate(1) opacity(1) blur(0); /* Hold full clarity for 5 seconds */
-  }
-  75% {
-    filter: saturate(0) opacity(0) blur(10px); /* Fade out */
-  }
-  100% {
-    filter: saturate(1) opacity(1) blur(0); /* Back to normal */
-  }
-}
+
 @media screen and (max-width: 600px){
     .header{
         min-height: fit-content;
